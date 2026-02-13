@@ -19,7 +19,7 @@
     "package": "ncc build index.js -o dist --minify --no-cache"
   },
   "dependencies": {
-    "@actions/core": "^2.0.3",
+    "@actions/core": "^3.0.0",
     "@actions/tool-cache": "4.0.0",
     "@octokit/action": "^8.0.4",
     "@octokit/rest": "^22.0.1",
