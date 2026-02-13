@@ -1,0 +1,25 @@
+name: 'Root-level directory diff action'
+description: 'Compares two refs via GitHub API and returns unique top-level directories with changes'
+
+inputs:
+  base:
+    description: 'Base ref (branch, tag, commit sha)'
+    required: true
+  head:
+    description: 'Head ref (branch, tag, commit sha)'
+    required: true
+  repository:
+    description: 'GitHub repository in the format owner/repo'
+    required: true
+  token:
+    description: 'GitHub token with repo scope (defaults to GITHUB_TOKEN if not provided)'
+    required: false
+    default: ''
+
+outputs:
+  changed-dirs:
+    description: 'JSON string: { "changed_dirs": ["dir1", "dir2", ...] }'
+
+runs:
+  using: 'node24'
+  main: 'dist/index.js'

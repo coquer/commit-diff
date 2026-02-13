@@ -1,0 +1,43 @@
+{
+  "name": "commit-diff",
+  "version": "1.0.0",
+  "description": "compare two ref via GitHub API",
+  "homepage": "https://github.com/coquer/commit-diff#readme",
+  "bugs": {
+    "url": "https://github.com/coquer/commit-diff/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coquer/commit-diff.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js index.test.js",
+    "package": "ncc build index.js -o dist --minify --no-cache"
+  },
+  "dependencies": {
+    "@actions/core": "^2.0.3",
+    "@actions/tool-cache": "4.0.0",
+    "@octokit/action": "^8.0.4",
+    "@octokit/rest": "^22.0.1",
+    "http-proxy-agent": "^7.0.0",
+    "https-proxy-agent": "^7.0.6"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.12.7",
+    "@typescript-eslint/eslint-plugin": "^7.7.0",
+    "@typescript-eslint/parser": "^7.7.0",
+    "@vercel/ncc": "^0.38.1",
+    "@zeit/ncc": "^0.22.3",
+    "eslint": "^8.57.0",
+    "eslint-plugin-github": "^4.10.2",
+    "eslint-plugin-jest": "^28.2.0",
+    "eslint-plugin-jsonc": "^2.15.1",
+    "eslint-plugin-prettier": "^5.1.3"
+  }
+}
