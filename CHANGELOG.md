@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/coquer/commit-diff/compare/v1.1.0...v1.2.0) (2026-05-18)
+
+
+### Features
+
+* general build ([f24a4f8](https://github.com/coquer/commit-diff/commit/f24a4f860bac495ab00dc0f3df10ffc0f2488ad9))
+
 ## [1.1.0](https://github.com/coquer/commit-diff/compare/v1.0.0...v1.1.0) (2026-05-18)
 
 
