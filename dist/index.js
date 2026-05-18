@@ -71973,7 +71973,8 @@ async function run() {
     });
 
     if (response.status !== 200) {
-      setFailed('GitHub API error response')
+      setFailed('GitHub API error response');
+      return;
     }
 
     const files = response.data.files || [];
@@ -71996,8 +71997,8 @@ async function run() {
       const dirPath = `${part1}/${part2}`
 
       if (blackListedPrefixes.length > 0) {
-        const matchesAllow = blackListedPrefixes.some(prefix => dirPath.startsWith(prefix));
-        if (matchesAllow) continue;
+        const isBlacklisted = blackListedPrefixes.some(prefix => dirPath.startsWith(prefix));
+        if (isBlacklisted) continue;
       }
 
       changedDirs.add(dirPath);
