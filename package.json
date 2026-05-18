@@ -10,13 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/coquer/commit-diff.git"
   },
+  "exports": {
+    ".": "./dist/index.js"
+  },
   "license": "ISC",
   "author": "",
-  "type": "commonjs",
-  "main": "index.js",
   "scripts": {
     "lint": "eslint index.js index.test.js",
-    "package": "ncc build index.js -o dist --minify --no-cache --external @actions/core"
+    "package": "ncc build index.js -o dist --no-cache"
   },
   "dependencies": {
     "@actions/core": "^3.0.1",
@@ -27,10 +28,13 @@
     "https-proxy-agent": "^9.0.0"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@jest/globals": "^30.4.1",
     "@types/jest": "^30.0.0",
     "@types/node": "^25.8.0",
     "@vercel/ncc": "^0.38.1",
-    "@zeit/ncc": "^0.22.3"
+    "@zeit/ncc": "^0.22.3",
+    "eslint": "^10.4.0",
+    "globals": "^17.6.0"
   }
 }
