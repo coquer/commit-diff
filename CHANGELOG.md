@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/coquer/commit-diff/compare/v1.2.0...v1.3.0) (2026-05-18)
+
+
+### Features
+
+* changes ([eeb14c5](https://github.com/coquer/commit-diff/commit/eeb14c582cebb67016d28367e3d453932ebed529))
+
 ## [1.2.0](https://github.com/coquer/commit-diff/compare/v1.1.0...v1.2.0) (2026-05-18)
 
 
