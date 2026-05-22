@@ -31,7 +31,7 @@
     "@eslint/js": "^10.0.1",
     "@jest/globals": "^30.4.1",
     "@types/jest": "^30.0.0",
-    "@types/node": "^25.8.0",
+    "@types/node": "^25.9.1",
     "@vercel/ncc": "^0.38.1",
     "@zeit/ncc": "^0.22.3",
     "eslint": "^10.4.0",
